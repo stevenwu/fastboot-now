@@ -15,9 +15,13 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
+    "now-build": "ember build --environment=production",
+    "now-start": "PORT=8000 node fastboot-server.js",
     "test": "ember try:each"
   },
   "dependencies": {
+    "fastboot-app-server": "^1.0.0-rc.5",
+    "ember-cli-fastboot": "^1.0.0-rc.2",
     "ember-cli-babel": "^6.0.0"
   },
   "devDependencies": {
@@ -42,7 +46,7 @@
     "loader.js": "^4.2.3"
   },
   "engines": {
-    "node": ">= 4"
+    "node": "^6.0.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
